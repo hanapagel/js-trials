@@ -11,7 +11,12 @@ function printIndices(items) {
 
 // 2. everyOtherItem
 function everyOtherItem(items) {
-  
+  const result = []
+  for (let i = 0; i < items.length; i ++) {
+    if (i % 2 === 0) {
+      result.push(items[i]);
+    }
+  }console.log(`${result}`)
 }
 
 
